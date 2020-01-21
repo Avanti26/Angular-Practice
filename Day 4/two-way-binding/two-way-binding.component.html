@@ -1,0 +1,40 @@
+<p>
+  two-way-binding works!
+</p>
+<h1>imported forms module in app.module.ts</h1>
+
+<input type="text" placeholder="Enter the name" [(ngModel)]='myname'>
+
+{{myname}}
+
+<br> <br>
+
+<hr>
+
+<input type="text" placeholder="Enter name.. " [(ngModel)]='myname2'> <br> <br>
+<button (click)='onShowMe()'>Show me</button>
+<div [hidden]="ishidden">
+  {{myname2}}
+</div> <br><br>
+<hr>
+
+<input type="text" [(ngModel)]="myname3" (change)="onChange()"><br>
+<div [hidden]="ishidden1">
+  {{myname3}}
+</div> <br><br>
+<hr>
+
+<label for="myusername">Username: </label> &nbsp;
+<input type="text" 
+placeholder="Enter the Username..."
+ [(ngModel)]="username" id="myusername">
+<br><br>
+<Button (click)="OnSubmit()">Submit</Button>
+<hr>
+
+<label for="myusername1">Username: </label> &nbsp;
+<input type="text" 
+placeholder="Enter the Username..."
+  id="myusername1" #username1>
+<br><br>
+<Button (click)="OnSubmit1(username1)">Submit</Button>

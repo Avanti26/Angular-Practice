@@ -1,0 +1,11 @@
+<h1>
+  style-bind works!
+</h1>
+<h2 [style.color]="mycolor">Using Style Binding....</h2>
+<h3 [style.background]="mybg">Using Style Binding!!!!</h3>
+<h1 [style.color]="rating<4?'red':'green'">Style Binding Using Condition</h1>
+<h2 [style.background]="price<30?'yellow':'purple'">Using Condition 2</h2>
+<h1 [style.color]="price1<20?mycolor1:mycolor2">Dynamically setting value for color</h1>
+<h2 [style.background]="qty<5?myqty1:myqty2">Using Dynamic value for color property!</h2>
+<h1 [ngStyle]="myobj1">Using ngStyle directive</h1>
+<h2 [ngStyle]="myobj2">ngStyle Directive Works Great!!!</h2>
