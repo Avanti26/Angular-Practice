@@ -1,0 +1,37 @@
+
+		.html file
+
+<p>
+  manualcomp works!
+</p>
+
+ <h2> {{name}} </h2>
+ <h2> {{"Hi Welcome "+name}} </h2>
+ <h2> Hi Welcome {{name}} </h2>
+ <h2> {{2+2}} </h2>
+ <h2> {{'2+2'}} </h2>
+ <h2> {{name.toUpperCase()}} </h2>
+ <input type="text" value="{{name}}">
+
+		.ts
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-manualcomp',
+  templateUrl: './manualcomp.component.html',
+  styleUrls: ['./manualcomp.component.css']
+})
+export class ManualcompComponent implements OnInit {
+
+  name:string='Avanti Joshi';
+  
+
+  constructor() {
+   
+   }
+
+  ngOnInit() {
+  }
+
+}
