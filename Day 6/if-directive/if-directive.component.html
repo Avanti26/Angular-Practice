@@ -1,0 +1,33 @@
+<p>
+  if-directive works!
+</p>
+
+<div *ngIf="rating<4"> Your condition is true
+
+</div>
+<hr>
+
+<h3>Second Ex: </h3>
+
+<div *ngIf="rating1<4;else elsepart">Your condition is true</div>
+
+<!-- <div #elsepart>
+  You are in elsepart !
+  template ref var (#) does not work in div. We should use ng-template for this..
+</div> -->
+
+<ng-template #elsepart>
+  u r in else part
+<h1>You are in elsepart!!!</h1>
+</ng-template> <br><br>
+
+<hr>
+<div *ngIf="rating2<4;then mainpart else elsepart1"></div>
+
+<ng-template #mainpart>
+ You are in mainpart!
+</ng-template>
+
+<ng-template #elsepart1>
+You are in elsepart 1 ...
+</ng-template>
