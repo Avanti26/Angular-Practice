@@ -1,0 +1,45 @@
+Intallation Steps for Angular
+------------------------------
+open CMD first and Close other application if any are open (e.g Vs code)
+1) To check version of node js by hitting below Command
+node -v
+2) To check version of npm by hitting below Command 
+npm -v 
+Or 
+npm --version
+3) To install angular CLI
+ npm install -g @angular/cli@7.3.*
+==========================================================
+If any error occurred then use as below command
+npm cache clear --force
+npm cache verify
+==========================================================
+4) To check version of Angular which is already installed on your local machine
+ ng --version
+5) Now Create directory for Angular Program (give whatever name you want to give),also create directory in the drive wherever you want to create.
+6) Now open command prompt and go to that created directory in cmd 
+7) This will point to your current directory which you have created in step 5
+8) To create new Project in Angular, Enter below command
+ ng new hello-world
+9) After hitting above command it will ask few questions
+
+Would you like to add angular routing? Yes  hit enter
+
+Which stylesheet format would you like? hit eneter
+Now Creating Project starts its download the repository from their site to your local machine,You required Internet for first time create a project 
+9) After creation of Project, now again go to your project hello-world in cmd to point your created Project and hit the below command 
+for e.g d:/frontend/angular>cd hello-world
+then your cmd pointed to 
+d:/frontend/angular/hello-world>
+10) To run your 1st angular project, hit below command 
+ ng serve --open
+ or
+ ng serve -o
+After running, it will open your default browser automatically ---> http://localhost:4200/
+
+
+
+
+
+
+
