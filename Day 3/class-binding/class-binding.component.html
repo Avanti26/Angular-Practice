@@ -1,0 +1,12 @@
+<p>
+  class-binding works!
+</p>
+<h1>Class Binding ...</h1>
+
+<div [class]='myclass'> Using class binding</div>
+
+<h2 [class]="rating<5?myclass1:myclass2"> Class Binding using condition 1</h2>
+
+<h2 [class.on]="rating1<5" [class.off]="rating1>5">Class Binding using condition 2</h2>
+
+<h2 [ngClass]="myobj">Using ngClass directive of Angular</h2>

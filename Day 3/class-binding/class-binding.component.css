@@ -1,0 +1,28 @@
+.success
+{
+    color:green;
+}
+.warning
+{
+    color:yellow;
+}
+.danger
+{
+    color:red;
+}
+.special
+{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.on
+{
+    color: tomato;
+}
+
+.off
+{
+    color: burlywood;
+}

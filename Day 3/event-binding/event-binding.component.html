@@ -1,0 +1,10 @@
+<h1>
+  event-binding works!
+</h1>
+<!--<button (click)='myclick()'>Click Me</button> -->
+<input type="text" placeholder="Enter the name" (change)="onChange()"> <hr>
+<input type="text" placeholder="Enter the name" (keyup)="onKeyUp()"> <hr>
+<input type="text" placeholder="Enter the name" (keydown)="onKeyDown()"> <hr>
+
+<button (click)="onClick($event)" value="You have clicked a button!">Click me</button>
+

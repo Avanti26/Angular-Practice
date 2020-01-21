@@ -1,0 +1,20 @@
+<p>
+  property-binding works!
+</p>
+<h1>property-binding using image</h1>
+<input type="text" [value]="name"> <br> <br>
+<img [src]="imgUrl" alt="">
+
+<div>
+  <h2>without using property binding</h2> 
+</div>
+
+<div [hidden]='ishidden'>
+  <h2>using property binding</h2>
+</div>
+
+<h1> Boolean does not work in String interpolation </h1>
+
+<div hidden='{{ishidden1}}'>
+  Using string interpolation
+</div>
