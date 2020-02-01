@@ -1,0 +1,17 @@
+<h1>
+  service2 works!
+</h1>
+
+<table border="2px">
+  <tr class="bg-primary">
+    <th>ID</th>
+    <th>NAME</th>
+    <th>CITY</th>
+  </tr>
+
+  <tr *ngFor="let item of users">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.city}}</td>
+  </tr>
+</table>
