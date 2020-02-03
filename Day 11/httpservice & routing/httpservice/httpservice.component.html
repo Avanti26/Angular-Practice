@@ -1,0 +1,22 @@
+<!-- <h1>
+  We will use fake service as we don't have actual backend (provided by Angular). We will give request and it will give us back a response.
+</h1> -->
+
+<h1 class="text-center"> Users </h1> <br>
+
+<table border="2px">
+  <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>USER NAME</th>
+    <th>EMAIL ID</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of users">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.username}}</td>
+      <td>{{item.email}}</td>
+    </tr>
+  </tbody>
+</table>
